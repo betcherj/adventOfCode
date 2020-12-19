@@ -1,7 +1,7 @@
 def intCodeComputer(opPos, nums):
-    start = str(nums[opPos])
-    opcode = int(start[-2:])
-    param_mode = start[:-2][::-1]
+    position = str(nums[opPos])
+    opcode = int(position[-2:])
+    param_mode = position[:-2][::-1]
     values = [0,0,0,0,0]
     relative_base = 0
     while opcode != 99:
